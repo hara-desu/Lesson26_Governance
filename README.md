@@ -1,66 +1,25 @@
-## Foundry
+# 🧱 Governance Contract — Foundry Deployment & Testing
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+This repository contains a **Foundry-based setup** for the governance smart contract shown in the  
+[Smart Contract Programmer YouTube tutorial](https://www.youtube.com/watch?v=dF9le0T6mdc).
 
-Foundry consists of:
+It is a **fork** of the original repository that hosts all Solidity tutorials from the channel,  
+but this fork replaces the old example code with **deployment scripts** and **comprehensive tests** built for Foundry.
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+---
 
-## Documentation
+## 🚀 Overview
 
-https://book.getfoundry.sh/
+This project demonstrates a complete **Foundry workflow** for Solidity development — from writing and testing to deployment and verification.
 
-## Usage
+### Key Features
 
-### Build
+- ✍️ Governance and token smart contracts (`Governance.sol`, `MyToken.sol`)
+- ⚙️ Deploy scripts for multiple environments (Anvil, Sepolia)
+- 🧪 Unit tests for all proposal and voting functions
+- 🧰 Foundry cheatcodes (`vm.prank`, `vm.warp`, `vm.deal`, etc.)
 
-```shell
-$ forge build
-```
+The repository serves as a practical learning and testing environment for governance mechanisms in Solidity.
 
-### Test
+---
 
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
